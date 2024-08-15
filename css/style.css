@@ -29,9 +29,15 @@ form {
 .user-input input {
   width: calc(100% - 150px);
   padding: 5px 10px;
+  /* border-radius: 5px; */
 }
 .user-input input:focus {
   outline: none;
+  /* --webkit-appearance: none; */
+}
+.user-input input[type="number"] {
+  outline: none;
+  --webkit-appearance: none;
 }
 .btm-links {
   display: flex;
@@ -58,16 +64,23 @@ form {
   color: white;
   border: none;
 }
-
+.submitbtm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .submit_btn {
   width: 120px;
   height: 40px;
   font-size: 1.1rem;
-  margin-bottom: 50px;
+  margin: 30px 0;
   text-align: center;
 }
 .submit_btn:hover {
   cursor: pointer;
+  background-color: green;
+  color: white;
+  border: none;
 }
 
 @media (max-width: 420px) {
